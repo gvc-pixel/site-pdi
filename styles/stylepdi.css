@@ -105,7 +105,7 @@ main{
     gap: 28px;
     align-items: center;
     justify-content: center;
-    padding-top: 100%;
+    padding-top: 125%;
     padding-bottom: 64px;
     background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
     width: 100vw;
@@ -120,13 +120,13 @@ main{
 
 .apresentacao__segunda__area{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 28px;
     align-items: center;
     justify-content: center;
     background-color: white;
     width: 100vw;
-    padding: 64px 32px;
+    padding: 32px 32px;
 }
 
 .apresentacao__areas__bloco{
@@ -144,10 +144,21 @@ main{
     background-color: #232323;
     color: white;
     width: 130%;
-    padding: 64px 32px;
+    padding: 64px 64px 64px 8px;
     border-radius: 48px;
     box-shadow: 0 2px 8px 0 rgba(227, 51, 0, 0.50);
     margin: 2%;
+}
+
+.apresentacao__quarta__area{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    padding: 64px 32px;
 }
 
 .apresentacao__titulo__principal{
@@ -162,16 +173,45 @@ main{
     font-family: 'DM Sans', sans-serif;
     font-size: 2.625rem;
     font-weight: 700;
-    padding: 0px 16px;
 }
 
 h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha faz com que todo strong dentro dessa classe tenha essa cor*/
+
+#descricao{
+    color: #232323;
+    padding-left: 16px;
+} /*atribuí uma id ao parágrafo da descrição, e usando essa linha de código eu consigo mudar a cor sem afetar outros parágrafos*/
+
+#LegendaAtualizacao{width: 50; font-weight: 500;}
+
+.apresentacao__atualizacoes__titulo{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.apresentacao__area__atualizacoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+    background-color: white;
+    color:#232323;
+    border-radius: 24px;
+    padding: 30px;
+    width: 40%;
+}
+
+.apresentacao__atualizacoes__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .apresentacao__subtitle{
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    padding: 0px 16px;
 }
 
 .apresentacao__caption{
@@ -179,14 +219,19 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
-    padding: 0px 16px;
 }
 
 .apresentacao__body{
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    padding: 0px 16px;
+}
+
+.carrossel__imagens{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    padding: 16px 0px;
 }
 
 .botao{
@@ -194,7 +239,6 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
     flex-direction: row;
     justify-content: start;
     gap: 20px;
-    padding: 0px 16px;
 }
 
 .botao__corpo{
