@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+header{
+    position: fixed;
+    top: 10px;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -15,7 +20,7 @@ body{
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
-    background: linear-gradient(80deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
+    background-color: white;
 }
 
 main{
@@ -88,11 +93,22 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 1030px;
     height: fit-content;
+    padding: 64px 64px 0px;
+}
+
+.apresentacao__primeira__area{
+    display: flex;
+    flex-direction: row;
     gap: 28px;
-    padding: 64px 64px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100%;
+    padding-bottom: 64px;
+    background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
+    width: 100vw;
 }
 
 .apresentacao__conteudo{
@@ -100,6 +116,38 @@ main{
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.apresentacao__segunda__area{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    padding: 64px 32px;
+}
+
+.apresentacao__areas__bloco{
+    padding-left: 76px;
+    padding-right: 76px;
+    width: 500px;
+}
+
+.apresentacao__terceira__area{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
+    color: white;
+    width: 130%;
+    padding: 64px 32px;
+    border-radius: 48px;
+    box-shadow: 0 2px 8px 0 rgba(227, 51, 0, 0.50);
+    margin: 2%;
 }
 
 .apresentacao__titulo__principal{
@@ -110,11 +158,34 @@ main{
     padding: 0px 16px;
 }
 
-.apresentacao__texto{
+.apresentacao__titulo__secao{
     font-family: 'DM Sans', sans-serif;
-    color: #232323;
+    font-size: 2.625rem;
+    font-weight: 700;
+    padding: 0px 16px;
+}
+
+h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha faz com que todo strong dentro dessa classe tenha essa cor*/
+
+.apresentacao__subtitle{
+    font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     font-weight: 600;
+    padding: 0px 16px;
+}
+
+.apresentacao__caption{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0px 16px;
+}
+
+.apresentacao__body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     padding: 0px 16px;
 }
 
