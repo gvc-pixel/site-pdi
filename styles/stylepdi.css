@@ -21,6 +21,7 @@ body{
     width: 100vw;
     box-sizing: border-box;
     background-color: white;
+    overflow-x: hidden;
 }
 
 main{
@@ -111,6 +112,18 @@ main{
     width: 100vw;
 }
 
+#imagem__hero__paginas{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 220%;
+    padding-bottom: 16px;
+    background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
+    width: 100vw;
+}
+
 .apresentacao__conteudo{
     width: 520px;
     display: flex;
@@ -130,9 +143,12 @@ main{
 }
 
 .apresentacao__areas__bloco{
+    display: flex;
+    flex-direction: column;
     padding-left: 76px;
     padding-right: 76px;
     width: 500px;
+    gap: 20px;
 }
 
 .apresentacao__terceira__area{
@@ -146,7 +162,7 @@ main{
     width: 130%;
     padding: 64px 64px 64px 8px;
     border-radius: 48px;
-    box-shadow: 0 2px 8px 0 rgba(227, 51, 0, 0.50);
+    box-shadow: 0 2px 8px 0 rgba(35, 35, 35, 1);
     margin: 2%;
 }
 
@@ -181,6 +197,18 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
     color: #232323;
     padding-left: 16px;
 } /*atribuí uma id ao parágrafo da descrição, e usando essa linha de código eu consigo mudar a cor sem afetar outros parágrafos*/
+
+#descricao__paginas{
+    color: #232323;
+    padding-left: 16px;
+    width: 400px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#lista{
+    font-weight: 500;
+}
 
 #LegendaAtualizacao{width: 50; font-weight: 500;}
 
@@ -309,4 +337,60 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
     background-size: cover;
     color: #ffffff;
     gap: 20px;
+}
+
+.hero__paginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    height: fit-content;
+    padding: 64px 48px;
+    border-radius: 40px;
+    background: linear-gradient(180deg, rgba(255, 96, 2, 0.00) 0%, #FF6002 57.93%, #FE3E03 99.87%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.hero__paginas__imagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    right: 150px;
+}
+
+ul li::marker {
+  color: var(--cor-cesar);
+}
+
+.paginas__cargos__cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+    background-color: white;
+    color:#232323;
+    border-radius: 24px;
+    padding: 24px 30px;
+    width: 80%;
+}
+
+.paginas__cargos__area{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
+    color: white;
+    width: 130%;
+    border-radius: 48px;
+    box-shadow: 0 2px 8px 0 rgba(35, 35, 35, 1);
+    margin: 0%;
 }
